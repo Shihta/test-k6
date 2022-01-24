@@ -1,0 +1,1368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>A leading datacenter hardware solution provider | QCT- Quanta Cloud Technology</title>
+<meta name="author" content="Designed by Akacia System | 旭亞系統設計(股)公司 | www.akacia.com.tw" />
+<meta name="keywords" content="QCT, data center server, hyperscale hardware, general purpose servers, multi-node servers, high density servers, 1U servers, 2U servers, 3U servers, 4U servers, business critical servers, high density storage, storage servers, JBOD, bare metal switch, ethernet switch, network virtualization, data center switch, rack system, rack architecture, open rack solution, compute blades, storage blades, Open CloudServer, Open Compute Project, enterprise datacenters, mezzanine cards, OCP network mezzanine, QCT Network mezzanine, QCT SAS mezzanine, cluster server, GPGPU servers, Xeon Phi servers, microserver, storage appliance, Spine Switch, Leaf Switch, Management Switch, QuantaPlex, QuantaGrid, STRATOS, QuantaMicro, QuantaVault, QuantaMesh, QuantaMesh BMS, Rackgo X, Rackgo-M, Rackgo X-RSD, QCT solutions, Desktop Virtualization, Compute Virtualization, Storage Virtualization, Big Data, data center solution,data center switch architecture,QCT, data center server, hyperscale hardware, general purpose servers, multi-node servers, high density servers, 1U servers, 2U servers, 3U servers, 4U servers, business critical servers, high density storage, storage servers, JBOD, bare metal switch, ethernet switch, network virtualization, data center switch, rack system, rack architecture, open rack solution, compute blades, storage blades, Open CloudServer, Open Compute Project, enterprise datacenters, mezzanine cards, OCP network mezzanine, QCT Network mezzanine, QCT SAS mezzanine, cluster server, GPGPU servers, Xeon Phi servers, microserver, storage appliance, Spine Switch, Leaf Switch, Management Switch, QuantaPlex, QuantaGrid, STRATOS, QuantaMicro, QuantaVault, QuantaMesh, QuantaMesh BMS, Rackgo X, Rackgo-M, Rackgo X-RSD, QCT solutions, Desktop Virtualization, Compute Virtualization, Storage Virtualization, Big Data, data center solution,data center switch architecture" />
+<meta name="description" content="Quanta Cloud Technology (QCT) is a global datacenter solution provider. We combine the efficiency of hyperscale hardware with infrastructure software from a diversity of industry leaders to solve next-generation datacenter design and operation challenges. QCT serves cloud service providers, telecoms and enterprises running public, hybrid and private clouds.,QCT (Quanta Cloud Technology)">
+<!--[if IE 9]>
+		<script type="text/javascript" src="/template/js/pie/PIE_IE9.js"></script>
+	<![endif]-->
+<!--[if lt IE 9]>
+	  <script type="text/javascript" src="/template/js/pie/PIE_IE678.js"></script>
+	  <script type="text/javascript" src="/template/js/pie/selectivizr-min.js"></script>
+	<![endif]-->
+
+<link href="/template/css/sweetalert.css" rel="stylesheet" type="text/css" media="screen"><link href="/template/css/reset.css" rel="stylesheet" type="text/css" /><link href="/template/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/template/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css" /><link href="/template/css/font-awesome.min.css" rel="stylesheet" type="text/css" /><link href="/template/css/animate.min.css" rel="stylesheet" type="text/css" /><link href="/template/css/colorbox.css" rel="stylesheet" type="text/css" /><link href="/template/css/video-js.css" rel="stylesheet" type="text/css" /><link href="/template/css/default.css" rel="stylesheet" type="text/css" /> 
+<script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery-1.11.0.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery-ui.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/sweetalert.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery.mousewheel.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/bootstrap.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery.mCustomScrollbar.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery.colorbox-min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/video.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/yotube.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/video_play.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/init.js"></script> 
+<link href="/template/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css" /><link href="/template/css/swiper.min.css" rel="stylesheet" type="text/css" /><link href="/template/css/dir/index.css" rel="stylesheet" type="text/css" /> <script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery.fullpage.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/swiper.jquery.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery.mobile.custom.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/jquery.loadie.min.js"></script><script type="7e3f05c73affed813b8c4773-text/javascript" src="/template/js/index.js"></script> <link rel="shortcut icon" href="/favicon.ico">
+<meta name="google-site-verification" content="p1K8IEfi0dXZhoZLBJpsdYa6kw9dGrCEj4lv__EPc8k" />
+
+<script type="7e3f05c73affed813b8c4773-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9RLR6J');</script>
+
+
+<script type="7e3f05c73affed813b8c4773-text/javascript">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2261475697431869');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2261475697431869&ev=PageView&noscript=1"
+/></noscript>
+
+</head>
+<body>
+
+<header class="header" id="header">
+<nav class="navbar">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" id="m_menu_hamb">
+<div class="open_block">
+<i class="fa fa-bars"></i>
+</div>
+<div class="close_block">
+<i class="material-icons">clear</i>
+</div>
+</button>
+<a class="navbar-brand logo" href="https://www.qct.io/">
+<img src="/template/images/qct_logo.png" alt="QCT" title="QCT" class="pc_logo img-responsive">
+<img src="/template/images/qct_m_logo.svg" alt="QCT" title="QCT" class="m_logo img-responsive">
+</a>
+<div class="link_block hidden-sm hidden-md hidden-lg">
+<a href="#" class="icon_search"><i class="fa fa-search" aria-hidden="true"></i></a>
+<a href="/contactform/index" class="icon_email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+</div>
+</div>
+<div class="menu_black" id="menu_black">
+<i class="material-icons">clear</i>
+<div class="search-container hide" id="search-container">
+<div id="search-area">
+<form action="/home/search">
+<input type="text" id="search-input" class="search-input" name="q" placeholder="Type and press enter">
+
+</form>
+</div>
+</div>
+</div>
+
+<div class="collapse navbar-collapse menu" id="menu">
+<ul class="nav navbar-nav">
+<li class="lv1">
+<a href="/product/index" class="has_next_lv">
+Products </a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i><ul class="lv2_block">
+<li class="lv2">
+<a href="/product/index/Server" class="has_next_lv">
+<img src="/upload/website/product/common/server_w_16092116167.svg" alt="Server" title="Server" data-normal-img="/upload/website/product/common/server_w_16092116167.svg" data-hover-img="/upload/website/product/common/server_b_16092910878.svg" class="hidden-xs">
+<span>Server</span>
+</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv3_block">
+<li class="lv3">
+<a href="/product/overview/Server">Overview</a>
+</li>
+<li class="lv3">
+<a href="/product/index/Server/rackmount-server">Rackmount Server</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Server/rackmount-server/Edge-Server">Edge Server</a></li>
+<li><a href="/product/index/Server/rackmount-server/1U-Rackmount-Server">1U</a></li>
+<li><a href="/product/index/Server/rackmount-server/2U-Rackmount-Server">2U</a></li>
+<li><a href="/product/index/Server/rackmount-server/4U-Rackmount-Server">4U</a></li>
+<li><a href="/product/index/Server/rackmount-server/Cluster-Server">Cluster Server</a></li>
+<li><a href="/product/index/Server/rackmount-server/GPGPU-Xeon-Phi">GPGPU</a></li>
+<li><a href="/product/index/Server/rackmount-server/Multi-node-Server">Multi-node Server</a></li>
+<li><a href="/product/index/Server/rackmount-server/Microserver">Microserver</a></li>
+<li><a href="/product/index/Server/rackmount-server/uCPE">uCPE</a></li>
+</ul>
+</li>
+<li class="lv3">
+<a href="/product/index/Server/Server-Accessory">Accessory</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Server/Server-Accessory/OCP-Network-Mezzanine-For-Server">OCP Network Mezzanine</a></li>
+<li><a href="/product/index/Server/Server-Accessory/QCT-Network-Mezzanine-For-Server">QCT Network Mezzanine</a></li>
+<li><a href="/product/index/Server/Server-Accessory/QCT-SAS-Mezzanine-For-Server">QCT SAS Mezzanine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="lv2">
+<a href="/product/index/Storage" class="has_next_lv">
+<img src="/upload/website/product/common/storage_w_16092911763.svg" alt="Storage" title="Storage" data-normal-img="/upload/website/product/common/storage_w_16092911763.svg" data-hover-img="/upload/website/product/common/storage_b_16092911375.svg" class="hidden-xs">
+<span>Storage</span>
+</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv3_block">
+<li class="lv3">
+<a href="/product/overview/Storage">Overview</a>
+</li>
+<li class="lv3">
+<a href="/product/index/Storage/JBOD">JBOD</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Storage/JBOD/4U-JBOD">4U</a></li>
+<li><a href="/product/index/Storage/JBOD/2U">2U</a></li>
+</ul>
+</li>
+<li class="lv3">
+<a href="/product/index/Storage/Storage-Server">Storage Server</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Storage/Storage-Server/1U-Storage-Server">1U</a></li>
+<li><a href="/product/index/Storage/Storage-Server/2U-Storage-Server">2U</a></li>
+<li><a href="/product/index/Storage/Storage-Server/4U-Storage-Server">4U</a></li>
+</ul>
+</li>
+<li class="lv3">
+<a href="/product/index/Storage/Storage-Accessory">Accessory</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Storage/Storage-Accessory/OCP-Network-Mezzanine-For-Storage">OCP Network Mezzanine</a></li>
+<li><a href="/product/index/Storage/Storage-Accessory/QCT-Network-Mezzanine-For-Storage">QCT Network Mezzanine</a></li>
+<li><a href="/product/index/Storage/Storage-Accessory/QCT-SAS-Mezzanine-For-Storage">QCT SAS Mezzanine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="lv2">
+<a href="/product/index/Switch" class="has_next_lv">
+<img src="/upload/website/product/common/networking_w_16092911644.svg" alt="Switch" title="Switch" data-normal-img="/upload/website/product/common/networking_w_16092911644.svg" data-hover-img="/upload/website/product/common/networking_b_16092911301.svg" class="hidden-xs">
+<span>Switch</span>
+</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv3_block">
+<li class="lv3">
+<a href="/product/overview/Switch">Overview</a>
+</li>
+<li class="lv3">
+<a href="/product/index/Switch/Ethernet-Switch">Ethernet Switch</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Switch/Ethernet-Switch/T1000-Series">T1000 Series</a></li>
+<li><a href="/product/index/Switch/Ethernet-Switch/T3000-Series">T3000 Series</a></li>
+<li><a href="/product/index/Switch/Ethernet-Switch/T4000-Series">T4000 Series</a></li>
+<li><a href="/product/index/Switch/Ethernet-Switch/T5000-Series">T5000 Series</a></li>
+<li><a href="/product/index/Switch/Ethernet-Switch/T7000-Series">T7000 Series</a></li>
+</ul>
+</li>
+<li class="lv3">
+<a href="/product/index/Switch/Bare-Metal-Switch">Bare Metal Switch</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/Switch/Bare-Metal-Switch/Spine-Switch">Spine Switch</a></li>
+<li><a href="/product/index/Switch/Bare-Metal-Switch/Leaf-Switch">Leaf Switch</a></li>
+<li><a href="/product/index/Switch/Bare-Metal-Switch/Management-Switch">Management Switch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="lv2">
+<a href="/product/index/software" class="has_next_lv">
+<img src="/upload/website/product/common/software_w_17031310463.svg" alt="Software" title="Software" data-normal-img="/upload/website/product/common/software_w_17031310463.svg" data-hover-img="/upload/website/product/common/software_b_17031310640.svg" class="hidden-xs">
+<span>Software</span>
+</a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv3_block">
+<li class="lv3">
+<a href="/product/overview/software">Overview</a>
+</li>
+<li class="lv3">
+<a href="/product/index/software/Management_Tool"><hide>Management Tool</hide></a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv4_block hidden-sm hidden-md hidden-lg">
+<li><a href="/product/index/software/Management_Tool/Management_Tool">Management Tool</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul> </li>
+<li class="lv1">
+<a href="#" class="has_next_lv">
+Solutions </a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i><ul class="lv2_block"> <li class="lv2">
+<a href="http://go.qct.io/solutions" target="_blank">Overview</a>
+</li>
+<li class="lv2">
+<a href="https://go.qct.io/telco/" target="_blank">QCT Telco solution</a>
+</li>
+<li class="lv2">
+<a href="https://go.qct.io/qct-pod/" target="_blank">QCT POD</a>
+</li>
+<li class="lv2">
+<a href="https://go.qct.io/solutions/rpa/" target="_blank">QCT RPA Solution</a>
+</li>
+<li class="lv2">
+<a href="http://go.qct.io/qct-oem-solutions/" target="_blank">QCT OEM Solutions</a>
+</li>
+<li class="lv2">
+<a href="http://go.qct.io/solutions/#Enterprise-Private-Cloud" target="_blank">Private Cloud</a>
+</li>
+<li class="lv2">
+<a href="http://go.qct.io/solutions/#Virtual-Desktop-Infrastructure" target="_blank">Virtual Desktop Infrastructure</a>
+</li>
+<li class="lv2">
+<a href="http://go.qct.io/solutions/#Software-Defined-Storage" target="_blank">Software Defined Storage</a>
+</li>
+<li class="lv2">
+<a href="http://go.qct.io/solutions/#Data-Analytic-Platform" target="_blank">Data Analytic Platform</a>
+</li>
+<li class="lv2">
+<a href="https://go.qct.io/solutions/#HPC_DL" target="_blank">High Performance Computing / Deep Learning</a>
+</li>
+</ul> </li>
+<li class="lv1">
+<a href="#" class="has_next_lv">
+Support </a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i><ul class="lv2_block"> <li class="lv2">
+<a href="https://www.qct.io/Press-Releases/index/PR/Server/Security-Center" target="_blank">Security Center</a>
+</li>
+<li class="lv2">
+<a href="http://go.qct.io/qct-networking-gpl-support/" target="_blank">GPL Open Source</a>
+</li>
+<li class="lv2">
+<a href="/faq/index">FAQ</a>
+</li>
+<li class="lv2">
+<a href="/Download/index">Download Center</a>
+</li>
+<li class="lv2">
+<a href="/Service-Warranty/index">Service & Warranty</a>
+</li>
+<li class="lv2">
+<a href="https://go.qct.io/qct-quantamesh-product-life-cycle-policy/" target="_blank">QCT QuantaMesh Life Cycle policy</a>
+</li>
+</ul> </li>
+<li class="lv1">
+<a href="/Company-AboutQCT/index" class="has_next_lv">
+Company </a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i><ul class="lv2_block"> <li class="lv2">
+<a href="/Company-AboutQCT/index">About QCT</a>
+</li>
+<li class="lv2">
+<a href="/Contact-QCT/index">Contact QCT</a>
+</li>
+<li class="lv2">
+<a href="/Events/index">Event</a>
+</li>
+<li class="lv2">
+<a href="/Press-Releases/index">Press Release</a>
+</li>
+<li class="lv2">
+<a href="http://blog.qct.io">Blog</a>
+</li>
+</ul> </li>
+<li class="lv1">
+<a href="#" class="has_next_lv">
+Career </a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i><ul class="lv2_block"> <li class="lv2">
+<a href="https://go.qct.io/joblistingpage/" target="_blank">US Branch</a>
+</li>
+</ul> </li>
+</ul>
+<div class="link_block hidden-xs">
+<a href="#" class="icon_search" id="icon_search" title="Search"><i class="fa fa-search" aria-hidden="true"></i></a>
+<a href="/contactform/index" class="icon_email" title="Contact QCT"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+</div>
+<ul class="nav navbar-nav resident_block">
+<li class="where_to_buy_block">
+<a href="/wheretobuy/index"><i class="fa fa-location-arrow where_to_buy" aria-hidden="true"></i>Where to buy</a>
+</li>
+<li class="lv1">
+<a href="#" class="has_next_lv">
+<i class="lang_icon material-icons">language</i>Global </a>
+<i class="fa fa-caret-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv2_block">
+<li class="lv2 this"><a href="https://www.qct.io/">Global</a></li>
+<li class="lv2"><a href="/en-US">US</a></li>
+<li class="lv2"><a href="/ja-JP">日本語</a></li>
+<li class="lv2"><a href="/zh-CN">簡体中文</a></li>
+<li class="lv2"><a href="/de-DE">Deutsch</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</header> 
+<div class="container" id="container">
+<section class="kv_block" data-right-navi="What&#039;s new　">
+<div id="home_kv_carousel" class="carousel slide" data-interval="4000" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#home_kv_carousel" data-slide-to="0" class="active"></li>
+<li data-target="#home_kv_carousel" data-slide-to="1"></li>
+<li data-target="#home_kv_carousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<div class="fill" style="background-image: url('/upload/website/home_kv/normal/Landing-page_BG_21040715674.jpg')">
+<div class="table_block">
+<div class="table_cell">
+<div class="content_block">
+<div class="title bold"></div>
+<div class="content"><img class="aligncenter wp-image-15211 size-full" src="http://go.qct.io/wp-content/uploads/2021/04/icx-text-png-a.png" alt="" width="1200" height="600" /></div>
+<a href="https://go.qct.io/intel-3rd-gen-xeon-processor-products/" class="btn_block" target="_blank">View more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="fill" style="background-image: url('/upload/website/home_kv/normal/AMD landing page-kv-d_21031709307.png')">
+<div class="table_block">
+<div class="table_cell">
+<div class="content_block">
+<div class="title bold"></div>
+<div class="content"><br><br />
+<br><br />
+<br><br />
+<br><br />
+<br></div>
+<a href="http://go.qct.io/amd-epyc-servers" class="btn_block" target="_blank">View more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="fill" style="background-image: url('/upload/website/home_kv/normal/hero_banner_2020_20012212102.jpg')">
+<div class="table_block">
+<div class="table_cell">
+<div class="content_block">
+<div class="title"></div>
+<div class="content"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="next-section hidden-xs hidden-sm active" id="next-section"></div>
+</section>
+<section class="promition_block" data-right-navi="QCT Telco Solution">
+<div id="home_promition_carousel-1" class="carousel slide" data-interval="8000" data-ride="carousel">
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<div class="fill" style="background-image: url('/upload/website/home_kv/normal/bg_02_new_21062416575.jpg')">
+<div class="table_block">
+<div class="table_cell">
+<div class="content_block">
+<div class="title bold">QCT Telco solution</div>
+<div class="content">Driving fundamental changes in the way telco operators plan, deploy, and manage their infrastructure with greater ﬂexibility, scalability and cost-eﬀectiveness</div>
+<a href="https://go.qct.io/telco" class="btn_block" target="_blank">View more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="next-section hidden-xs hidden-sm" id="next-section"></div>
+</section>
+<section class="promition_block" data-right-navi="Intel Select Solutions">
+<div id="home_promition_carousel-2" class="carousel slide" data-interval="8000" data-ride="carousel">
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<div class="fill" style="background-image: url('/upload/website/home_kv/normal/intel_select_solution_17101310648.jpg')">
+<div class="table_block">
+<div class="table_cell">
+<div class="content_block">
+<div class="title"></div>
+<div class="content"><br><br />
+<br><br />
+<br><br />
+<br><br />
+<br></div>
+<a href="http://go.qct.io/solutions/qct-premier-intel-select-solutions/" class="btn_block" target="_blank">View more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="next-section hidden-xs hidden-sm" id="next-section"></div>
+</section>
+
+<section class="product_block" data-right-navi="Product　" id="home_product">
+<div class="parent_block">
+<div class="col-md-5 left_block">
+<div class="text_block">
+<div class="table_block">
+<div class="table_cell">
+<p class="title">HYPERSCALE<br>PRODUCTS</p>
+<h5>Working with the world’s best-in-class datacenter customers, QCT continues exploring the most innovative and advanced cloud technology.</h5>
+</div>
+</div>
+</div>
+<div class="image_block hidden-sm hidden-xs">
+<img src="/upload/website/index/images/Product-index-cover_16111017745.gif" alt="product" title="product">
+</div>
+</div>
+<div class="col-md-7 right_block">
+<div class="table_block">
+<div class="table_cell">
+<table class="item_list_block">
+<tr class="item" data-color="#009CE1" data-child-img="/upload/website/product/common/KV03-server_index_16122914886.jpg" data-alt="qct">
+<td class="cover_block image_block">
+<a href="/product/index/Server" class="circle_block prod_circle" data-id="10">
+<img src="/upload/website/product/common/server_bk_16092910445.svg" alt="Server" title="Server" data-hover-img="/upload/website/product/common/server_w_16092116167.svg" data-normal-img="/upload/website/product/common/server_bk_16092910445.svg">
+</a>
+</td>
+<td class="text_block">
+<p class="title">Server</p>
+<p class="description xs-text hidden-sm hidden-xs">1U/2U/4U general-purpose servers, multi-node high-density servers, and 4-way high-end business critical servers.</p>
+</td>
+<td class="next_block hidden-md hidden-sm hidden-xs">
+<div class="table_block circle_block prod_circle" data-id="10">
+<div class="table_cell">
+<div class="icon_block"></div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="item" data-color="#FFAA00" data-child-img="/upload/website/product/common/KV03-storage_index_16122914126.jpg" data-alt="">
+<td class="cover_block image_block">
+<a href="/product/index/Storage" class="circle_block prod_circle" data-id="7">
+<img src="/upload/website/product/common/storage_bk_16092911618.svg" alt="Server" title="Server" data-hover-img="/upload/website/product/common/storage_w_16092911763.svg" data-normal-img="/upload/website/product/common/storage_bk_16092911618.svg">
+</a>
+</td>
+<td class="text_block">
+<p class="title">Storage</p>
+<p class="description xs-text hidden-sm hidden-xs">High-density converged storage systems for various storage architectures and a range of I/O performance requirements.</p>
+</td>
+<td class="next_block hidden-md hidden-sm hidden-xs">
+<div class="table_block circle_block prod_circle" data-id="7">
+<div class="table_cell">
+<div class="icon_block"></div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="item" data-color="#8CD21E" data-child-img="/upload/website/product/common/KV03-networking_index_16122914879.jpg" data-alt="">
+<td class="cover_block image_block">
+<a href="/product/index/Switch" class="circle_block prod_circle" data-id="13">
+<img src="/upload/website/product/common/networking_bk_16092911669.svg" alt="Server" title="Server" data-hover-img="/upload/website/product/common/networking_w_16092911644.svg" data-normal-img="/upload/website/product/common/networking_bk_16092911669.svg">
+</a>
+</td>
+<td class="text_block">
+<p class="title">Switch</p>
+<p class="description xs-text hidden-sm hidden-xs">Open up datacenter networks by decoupling bare-metal switch and OS, offering flexibilities and scalability for network virtualization.</p>
+</td>
+<td class="next_block hidden-md hidden-sm hidden-xs">
+<div class="table_block circle_block prod_circle" data-id="13">
+<div class="table_cell">
+<div class="icon_block"></div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="item" data-color="#009CE1" data-child-img="/upload/website/product/common/qct_home_product_02_16102615458.png" data-alt="Server_test">
+<td class="cover_block image_block">
+<a href="/product/index/software" class="circle_block prod_circle" data-id="19">
+<img src="/upload/website/product/common/software_b_17031310792.svg" alt="Server" title="Server" data-hover-img="/upload/website/product/common/software_w_17031310463.svg" data-normal-img="/upload/website/product/common/software_b_17031310792.svg">
+</a>
+</td>
+<td class="text_block">
+<p class="title">Software</p>
+<p class="description xs-text hidden-sm hidden-xs">software</p>
+</td>
+<td class="next_block hidden-md hidden-sm hidden-xs">
+<div class="table_block circle_block prod_circle" data-id="19">
+<div class="table_cell">
+<div class="icon_block"></div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="child_block" id="home_product_child">
+<div class="col-lg-7 col-md-9 left_block">
+<div class="table_block">
+<div class="table_cell left_content">
+<p class="title" id="product_title"></p>
+<h5 id="product_description"></h5>
+<ul class="item_list_block" id="prod_item">
+</ul>
+<div class="btn_close" id="prodcut_btn_close">CLOSE</div>
+</div>
+</div>
+<div class="close_block">
+<i class="material-icons" id="home_prodcut_close">clear</i>
+</div>
+</div>
+<div class="col-lg-5 col-md-3 hidden-sm hidden-xs right_block">
+<img src="" alt="QCT" title="QCT" id="home_product_child_img">
+</div>
+</div>
+<div class="next-section hidden-xs hidden-sm" id="next-section"></div>
+</section>
+
+<section class="solution_block" data-right-navi="Solution　" id="home_solution2">
+<div class="parent_block">
+<div class="col-md-5 left_block">
+<div class="text_block">
+<div class="table_block">
+<div class="table_cell">
+<p class="title">HYPER-CONVERGED SOLUTIONS</p>
+<h5>Hyperscale engineering excellence is in the QCT “DNA.”, offering the hardware to meet demand of different scales of datacenters.</h5>
+</div>
+</div>
+</div>
+<div class="image_block hidden-sm hidden-xs">
+<a href="http://go.qct.io/solutions" target="_blank">
+<img src="/upload/website/index/images/Solution-index-cover_new_16123012128.gif" alt="" title="">
+</a>
+</div>
+</div>
+<div class="col-md-7 right_block">
+<div class="table_block">
+<div class="table_cell">
+<ul class="item_list_block">
+<li>
+<a href="http://go.qct.io/solutions/#Enterprise-Private-Cloud" target="_blank" style="font-size: 14px; font-weight: bolder;color: white;background: #4f81bd;">
+<span>PRIVATE CLOUD</span>
+</a>
+</li>
+<li>
+<a href="http://go.qct.io/solutions/#Virtual-Desktop-Infrastructure" target="_blank" style="font-size: 14px; font-weight: bolder;color: white;background: #9e9e9f;">
+<span>VIRTUAL DESKTOP INFRASTRUCTURE</span>
+</a>
+</li>
+<li>
+<a href="http://go.qct.io/solutions/#Software-Defined-Storage" target="_blank" style="font-size: 14px; font-weight: bolder;color: white;background: #4f81bd;">
+<span>SOFTWARE DEFINED STORAGE</span>
+</a>
+</li>
+<li>
+<a href="http://go.qct.io/solutions/#Data-Analytic-Platform" target="_blank" style="font-size: 14px; font-weight: bolder;color: white;background: #9e9e9f;">
+<span>DATA ANALYTIC PLATFORM</span>
+</a>
+</li>
+<li>
+<a href="http://go.qct.io/solutions/qct-premier-intel-select-solutions/" target="_blank" style="font-size: 14px; font-weight: bolder;color: white;background: #4f81bd;">
+<span>QCT Intel Select Solutions</span>
+</a>
+</li>
+<li>
+<a href="http://go.qct.io/qct-central-office-v2/" target="_blank" style="font-size: 14px; font-weight: bolder;color: white;background: #9e9e9f;">
+
+<span>QCT Telco Solution</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="child_block" id="home_solution_child">
+<div class="col-lg-6 col-md-5 left_block">
+<div class="table_block" id="solution_child_table">
+<div class="table_cell left_content">
+<div class="image_block">
+<img src="" class="img-responsive" alt="QCT" title="QCT" id="solution_child_img">
+</div>
+<div class="text_block">
+<h1 id="solution_child_title"></h1>
+<h4 id="solution_description"></h4>
+<a href="#" id="solution_link" class="btn_block">View more</a>
+</div>
+</div>
+</div>
+<div class="close_block">
+<i class="material-icons" id="home_solution_close">clear</i>
+</div>
+</div>
+<div class="col-lg-6 col-md-7 right_block">
+<div class="table_block">
+<div class="table_cell">
+<ul id="solution_item">
+</ul>
+<div class="btn_close" id="solution_btn_close">CLOSE</div>
+</div>
+</div>
+</div>
+</div>
+<div class="next-section hidden-xs hidden-sm" id="next-section"></div>
+</section>
+
+<section class="event_block" data-right-navi="Event　">
+<div class="top_block">
+<div class="col-sm-6 left_block">
+<div class="table_block">
+<div class="table_cell">
+<h1>Upcoming Events</h1>
+<h4 class="hidden-xs">Meet QCT at the following events, conferences, and seminars.</h4>
+<a href="https://www.qct.io/Events/" class="btn_block">View more</a>
+</div>
+</div>
+</div>
+<div class="col-sm-6 hidden-xs right_block">
+<img src="/upload/website/event/images/normal/q-synergy-2021-tw_21122411393.PNG" alt="" title="">
+<a href="https://go.qct.io/telco/q-synergy-2021-taiwan/" target="_blank" id="special_item">
+<div class="special_item">
+<div class="date_block">
+<div class="table_block">
+<div class="table_cell">
+<div class="circle_block">
+<div class="day_block">28</div>
+<div class="month_block">Dec.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content_block">
+<div class="table_block">
+<div class="table_cell">
+<h4 class="title">Q.synergy Taiwan 2021 5G X AI 應用趨勢論壇</h4>
+<h6>28 Dec. 2021 - 28 Dec. 2021 <br />Taiwan</h6>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="bottom_block">
+<div class="swiper-container" id="home_event">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.intel.com/content/www/us/en/events/on-event-series.html" target="_blank">
+<div class="circle_block">
+<div class="day_block">27</div>
+<div class="month_block">Oct.</div>
+</div>
+<h4>Intel Innovation</h4>
+<h6>27 Oct. 2021 - 28 Oct. 2021 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://sc21.supercomputing.org/" target="_blank">
+<div class="circle_block">
+<div class="day_block">15</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>SC21</h4>
+<h6>15 Nov. 2021 - 18 Nov. 2021 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.opencompute.org/summit/global-summit" target="_blank">
+<div class="circle_block">
+<div class="day_block">9</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>OCP Summit</h4>
+<h6>09 Nov. 2021 - 10 Nov. 2021 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://tmt.knect365.com/big-5g-event/" target="_blank">
+<div class="circle_block">
+<div class="day_block">1</div>
+<div class="month_block">Sep.</div>
+</div>
+<h4>BIG 5G Event</h4>
+<h6>01 Sep. 2021 - 02 Sep. 2021 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.mwcshanghai.com/" target="_blank">
+<div class="circle_block">
+<div class="day_block">29</div>
+<div class="month_block">Jun.</div>
+</div>
+<h4>MWC Shanghai</h4>
+<h6>29 Jun. 2021 - 01 Jul. 2021 <br />China</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.isc-hpc.com/" target="_blank">
+<div class="circle_block">
+<div class="day_block">24</div>
+<div class="month_block">Jun.</div>
+</div>
+<h4>ISC High Performance</h4>
+<h6>24 Jun. 2021 - 02 Jul. 2021 <br />Germany</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://go.qct.io/gtc21/" target="_blank">
+<div class="circle_block">
+<div class="day_block">12</div>
+<div class="month_block">Apr.</div>
+</div>
+<h4>GTC US- Platinum</h4>
+<h6>12 Apr. 2021 - 16 Apr. 2021 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.nvidia.cn/gtc/" target="_blank">
+<div class="circle_block">
+<div class="day_block">16</div>
+<div class="month_block">Dec.</div>
+</div>
+<h4>GTC China 2019</h4>
+<h6>16 Dec. 2019 - 19 Dec. 2019 <br />China</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://vforum.vmware.com/" target="_blank">
+<div class="circle_block">
+<div class="day_block">10</div>
+<div class="month_block">Dec.</div>
+ </div>
+<h4>vForum Taiwan 2019</h4>
+<h6>10 Dec. 2019 - 10 Dec. 2019 <br />Taiwan</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="http://vforum2019.v-event.cn/index?frm=ds_5d9aa80a0aaa7" target="_blank">
+<div class="circle_block">
+<div class="day_block">22</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>vForum China 2019</h4>
+<h6>22 Nov. 2019 - 22 Nov. 2019 <br />China</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://sc19.supercomputing.org/" target="_blank">
+<div class="circle_block">
+<div class="day_block">18</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>SC19</h4>
+<h6>18 Nov. 2019 - 21 Nov. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-north-america-2019/" target="_blank">
+<div class="circle_block">
+<div class="day_block">18</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>KubeCon+CloudNativeCon</h4>
+<h6>18 Nov. 2019 - 21 Nov. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://redhat-forum.jp/?sc_cid=701f2000001OH7EAAW" target="_blank">
+<div class="circle_block">
+<div class="day_block">15</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>Red Hat Forum Tokyo 2019</h4>
+<h6>15 Nov. 2019 - 15 Nov. 2019 <br />Japan</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.microsoft.com/en-us/ignite" target="_blank">
+<div class="circle_block">
+<div class="day_block">4</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>Microsoft Ignite 2019</h4>
+<h6>04 Nov. 2019 - 08 Nov. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://events.layer123.com/sdn/sdn-home-1747TP-7866UO.html" target="_blank">
+<div class="circle_block">
+<div class="day_block">14</div>
+<div class="month_block">Oct.</div>
+</div>
+<h4>SDN/NFV World Congress</h4>
+<h6>14 Oct. 2019 - 17 Oct. 2019 <br />Netherlands</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.mwcshanghai.com/" target="_blank">
+<div class="circle_block">
+<div class="day_block">26</div>
+<div class="month_block">Jun.</div>
+</div>
+<h4>MWC Shanghai 2019</h4>
+<h6>26 Jun. 2019 - 28 Jun. 2019 <br />China</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/Germany/isc-2019">
+<div class="circle_block">
+<div class="day_block">16</div>
+<div class="month_block">Jun.</div>
+</div>
+<h4>ISC 2019</h4>
+<h6>16 Jun. 2019 - 20 Jun. 2019 <br />Germany</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.computextaipei.com.tw/" target="_blank">
+<div class="circle_block">
+<div class="day_block">28</div>
+<div class="month_block">May.</div>
+</div>
+<h4>Computex Taipei 2019</h4>
+<h6>28 May. 2019 - 01 Jun. 2019 <br />Taiwan</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.redhat.com/en/summit/2019" target="_blank">
+<div class="circle_block">
+<div class="day_block">7</div>
+<div class="month_block">May.</div>
+</div>
+<h4>Red Hat Summit 2019</h4>
+<h6>07 May. 2019 - 09 May. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/Germany/CloudFest-2019">
+<div class="circle_block">
+<div class="day_block">23</div>
+<div class="month_block">Mar.</div>
+</div>
+<h4>CloudFest 2019</h4>
+<h6>23 Mar. 2019 - 29 Mar. 2019 <br />Germany</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.nvidia.com/en-us/gtc/" target="_blank">
+<div class="circle_block">
+<div class="day_block">17</div>
+<div class="month_block">Mar.</div>
+</div>
+<h4>GTC 2019</h4>
+<h6>17 Mar. 2019 - 21 Mar. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.opencompute.org/summit/global-summit" target="_blank">
+<div class="circle_block">
+<div class="day_block">14</div>
+<div class="month_block">Mar.</div>
+</div>
+<h4>OCP Summit 2019</h4>
+<h6>14 Mar. 2019 - 15 Mar. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/Spain/MWC-2019">
+<div class="circle_block">
+<div class="day_block">25</div>
+<div class="month_block">Feb.</div>
+</div>
+<h4>MWC 2019</h4>
+<h6>25 Feb. 2019 - 28 Feb. 2019 <br />Spain</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="http://go.qct.io/events/next-generation-central-office/" target="_blank">
+<div class="circle_block">
+<div class="day_block">24</div>
+<div class="month_block">Jan.</div>
+</div>
+<h4>QCT NGCO Launch Event</h4>
+<h6>24 Jan. 2019 - 24 Jan. 2019 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/United_States/SuperComputing-2018">
+<div class="circle_block">
+<div class="day_block">12</div>
+<div class="month_block">Nov.</div>
+</div>
+<h4>SuperComputing 2018</h4>
+<h6>12 Nov. 2018 - 15 Nov. 2018 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.nvidia.com/en-eu/gtc/" target="_blank">
+<div class="circle_block">
+<div class="day_block">9</div>
+<div class="month_block">Oct.</div>
+</div>
+<h4>GTC Technology Conference 2018 (EUROPE)</h4>
+<h6>09 Oct. 2018 - 11 Oct. 2018 <br />Germany</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/United_States/Microsoft-Ignite-2018">
+<div class="circle_block">
+<div class="day_block">24</div>
+<div class="month_block">Sep.</div>
+</div>
+<h4>Microsoft Ignite 2018</h4>
+<h6>24 Sep. 2018 - 28 Sep. 2018 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://bit.ly/2AQfYIG" target="_blank">
+<div class="circle_block">
+<div class="day_block">7</div>
+<div class="month_block">Sep.</div>
+</div>
+<h4>Open Source Networking 2018 Q3 Meetup</h4>
+<h6>07 Sep. 2018 - 07 Sep. 2018 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.vmworld.com/en/us/index.html" target="_blank">
+<div class="circle_block">
+<div class="day_block">26</div>
+<div class="month_block">Aug.</div>
+</div>
+<h4>VMworld 2018</h4>
+<h6>26 Aug. 2018 - 30 Aug. 2018 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/Germany/ISC-High-Performance-2018">
+<div class="circle_block">
+<div class="day_block">24</div>
+<div class="month_block">Jun.</div>
+</div>
+<h4>ISC High Performance</h4>
+<h6>24 Jun. 2018 - 27 Jun. 2018 <br />Germany</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.computextaipei.com.tw/" target="_blank">
+<div class="circle_block">
+<div class="day_block">5</div>
+<div class="month_block">Jun.</div>
+</div>
+<h4>Computex Taipei 2018</h4>
+<h6>05 Jun. 2018 - 09 Jun. 2018 <br />Taiwan</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/Canada/OpenStack-Summit-2018">
+<div class="circle_block">
+<div class="day_block">21</div>
+<div class="month_block">May.</div>
+</div>
+<h4>OpenStack Summit</h4>
+<h6>21 May. 2018 - 24 May. 2018 <br />Canada</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="/Events/index/United_States/Red-Hat-Summit_OpenStack-Summit">
+<div class="circle_block">
+<div class="day_block">8</div>
+<div class="month_block">May.</div>
+</div>
+<h4>Red Hat Summit</h4>
+<h6>08 May. 2018 - 10 May. 2018 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="http://www.opencompute.org/ocp-u.s.-summit-2018/" target="_blank">
+<div class="circle_block">
+<div class="day_block">20</div>
+<div class="month_block">Mar.</div>
+</div>
+<h4>OCP Summit 2018</h4>
+<h6>20 Mar. 2018 - 21 Mar. 2018 <br />United States</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="http://www.japan-it.jp/en/" target="_blank">
+<div class="circle_block">
+<div class="day_block">9</div>
+<div class="month_block">Mar.</div>
+</div>
+<h4>27th ITweek Japan Spring 2018</h4>
+<h6>09 Mar. 2018 - 11 Mar. 2018 <br />Japan</h6>
+</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="table_block">
+<div class="table_cell">
+<a href="https://www.mobileworldcongress.com/about/" target="_blank">
+<div class="circle_block">
+<div class="day_block">26</div>
+<div class="month_block">Feb.</div>
+</div>
+<h4>MWC 2018</h4>
+<h6>26 Feb. 2018 - 01 Mar. 2018 <br />Spain</h6>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-button-prev">
+<i class="fa fa-angle-left" aria-hidden="true"></i>
+</div>
+<div class="swiper-button-next">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</div>
+<div class="swiper-scrollbar"></div>
+</div>
+</div>
+<div class="next-section hidden-xs hidden-sm" id="next-section"></div>
+</section>
+
+<section class="contact_block" data-right-navi="Contact　">
+<div class="content_block">
+<h1>QCT Office</h1>
+<h5>Let us know how we can help.</h5>
+<form action="/contactform/index">
+<input type="text" name="person" placeholder="Full Name">
+<input type="text" name="email" placeholder="Email Address">
+<textarea name="message" cols="30" rows="5" placeholder="Message"></textarea>
+<button class="contact_submit">SUBMIT</button>
+</form>
+<div class="next_footer">
+<i class="fa fa-angle-down" aria-hidden="true" id="controll_footer"></i>
+</div>
+</div>
+</section>
+</div> 
+<div class="footer_black" id="footer_black"></div>
+<div class="go_top_block" id="go_top">
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+<input type="hidden" id="lang_val" value="global">
+<footer class="footer" id="footer">
+<i class="material-icons footer_close" id="footer_close">clear</i>
+<div class="footer_center_block">
+
+<div class="footer_sitemap" id="footer_sitemap">
+<ul>
+<li class="lv1">
+<a href="/product/index">What We Make</a>
+<i class="fa fa-angle-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv2_block">
+ <li><a href="/product/index/Server">Server</a></li>
+<li><a href="/product/index/Storage">Storage</a></li>
+<li><a href="/product/index/Switch">Switch</a></li>
+<li><a href="/product/index/software">Software</a></li>
+</ul>
+</li>
+<li class="lv1">
+<a href="#">Solutions</a>
+<i class="fa fa-angle-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv2_block">
+<li><a href="http://go.qct.io/solutions" target="_blank">Overview</a></li>
+<li><a href="https://go.qct.io/telco/" target="_blank">QCT Telco solution</a></li>
+<li><a href="https://go.qct.io/qct-pod/" target="_blank">QCT POD</a></li>
+<li><a href="https://go.qct.io/solutions/rpa/" target="_blank">QCT RPA Solution</a></li>
+<li><a href="http://go.qct.io/qct-oem-solutions/" target="_blank">QCT OEM Solutions</a></li>
+<li><a href="http://go.qct.io/solutions/#Enterprise-Private-Cloud" target="_blank">Private Cloud</a></li>
+<li><a href="http://go.qct.io/solutions/#Virtual-Desktop-Infrastructure" target="_blank">Virtual Desktop Infrastructure</a></li>
+<li><a href="http://go.qct.io/solutions/#Software-Defined-Storage" target="_blank">Software Defined Storage</a></li>
+<li><a href="http://go.qct.io/solutions/#Data-Analytic-Platform" target="_blank">Data Analytic Platform</a></li>
+<li><a href="https://go.qct.io/solutions/#HPC_DL" target="_blank">High Performance Computing / Deep Learning</a></li>
+</ul>
+</li>
+<li class="lv1">
+<a href="#">Support</a>
+<i class="fa fa-angle-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv2_block">
+<li><a href="https://www.qct.io/Press-Releases/index/PR/Server/Security-Center" target="_blank">Security Center</a></li>
+<li><a href="http://go.qct.io/qct-networking-gpl-support/" target="_blank">GPL Open Source</a></li>
+<li><a href="/faq/index">FAQ</a></li>
+<li><a href="/Download/index">Download Center</a></li>
+<li><a href="/Service-Warranty/index">Service & Warranty</a></li>
+<li><a href="https://go.qct.io/qct-quantamesh-product-life-cycle-policy/" target="_blank">QCT QuantaMesh Life Cycle policy</a></li>
+</ul>
+</li>
+<li class="lv1">
+<a href="/Company-AboutQCT/index">Company</a>
+<i class="fa fa-angle-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv2_block">
+<li><a href="/Company-AboutQCT/index">About QCT</a></li>
+<li><a href="/Contact-QCT/index">Contact QCT</a></li>
+<li><a href="/Events/index">Event</a></li>
+<li><a href="/Press-Releases/index">Press Release</a></li>
+<li><a href="http://blog.qct.io">Blog</a></li>
+</ul>
+</li>
+<li class="lv1">
+<a href="#">Career</a>
+<i class="fa fa-angle-right hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+<ul class="lv2_block">
+<li><a href="https://go.qct.io/joblistingpage/" target="_blank">US Branch</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="footer_top_block">
+<div class="community_block">
+<div class="table_cell">
+<div class="html_edit">
+<style><!--
+.footer_community_html{
+								margin: 0 auto;
+							}
+							.footer_community_html td{
+								padding: 0 15px;
+							}
+							@media (max-width: 799px) {
+								.footer_community_html td{
+									padding: 0 13px;
+								}
+							}
+--></style>
+<table class="footer_community_html">
+<tbody>
+<tr>
+<td><a href="https://www.facebook.com/quantacloudtechnology?fref=photo" target="_blank" rel="noopener noreferrer"> <img src="/upload/media/Index/footer/facebook.png" alt="" width="11" height="23" /> </a></td>
+<td><a href="https://twitter.com/QuantaQCT" target="_blank" rel="noopener noreferrer"> <img src="/upload/media/Index/footer/twitter.png" alt="" width="23" height="19" /> </a></td>
+<td><a href="https://www.linkedin.com/company/qct" target="_blank" rel="noopener noreferrer"> <img src="/upload/media/Index/footer/linkedin.png" alt="" width="23" height="22" /> </a></td>
+<td><a href="https://www.flickr.com/photos/136921067@N06/albums" target="_blank" rel="noopener noreferrer"> <img src="/upload/media/Index/footer/flickr.png" alt="" width="23" height="10" /> </a></td>
+<td><a href="https://www.youtube.com/user/QuantaQCT" target="_blank" rel="noopener noreferrer"> <img src="/upload/media/Index/footer/youtube.png" alt="" width="23" height="16" /> </a></td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+
+<div class="footer_about">
+<div class="html_edit">
+<style><!--
+.footer_about_html td{
+						color: #bdbdbd;
+						font-size: 13px;
+						line-height: 1.5em;
+						padding: 5px 10px 5px 0;
+					}
+					@media (min-width: 1050px) and (max-width: 1319px){
+						.footer_about_html tr{
+							display: inline-block;
+							float: left;
+							width: 50%;
+						}
+						.footer_about_html tr{
+							padding-right: 5px;
+						}
+						.footer_about_html td{
+							padding: 5px 25px 5px 0;
+						}
+					}
+					@media (min-width: 800px) and (max-width: 1049px){
+						.footer_about_html .img_td{
+							width: 15%;
+							margin-right: ;
+						}
+					}
+--></style>
+<table class="footer_about_html" style="width: 100%;">
+<tbody>
+<tr>
+<td style="text-align: justify; width: 45%;" colspan="2"><span style="font-family: OpenSans-Light,Arial,sans-serif,Microsoft JhengHei;">QCT, the QCT logo, Rackgo, Quanta, and the Quanta logo are trademarks or registered trademarks of Quanta Computer Inc.<br />Intel, the Intel logo, Optane, and Xeon Inside are trademarks or registered trademarks of Intel Corporation in the U.S. and/or other countries. All trademarks and logos are the properties of their respective&nbsp;holders.</span></td>
+</tr>
+<tr>
+<td class="img_td" style="width: 10%;"><img src="/upload/media/Index/footer/Intel_logo_new_100px.png" width="95" height="95" /></td>
+<td style="width: 40%;" valign="bottom"><span>Intel, the Intel logo, Optane, and Xeon Inside are trademarks or registered trademarks of Intel Corporation in the U.S. and/or other countries. All trademarks and logos are the properties of their respective holders.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p> </div>
+</div>
+</div>
+<div class="footer_bottom_block">
+<span class="copy_right">© 2021 Quanta Computer Inc. All rights reserved.</span>
+<a href="/policy/term_of_use">Terms of Use</a>
+<a href="/policy/privacy_policy">Privacy Policy</a>
+</div>
+</footer> 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9RLR6J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script type="7e3f05c73affed813b8c4773-text/javascript" id="cookieinfo" src="https://www.qct.io/microsite/cookieinfo.min.js">
+	moreinfo="https://www.qct.io/policy/privacy_policy"
+</script>
+<script type="7e3f05c73affed813b8c4773-text/javascript">
+   /* Create a configuration object */
+   var ss360Config = {
+      /* Your site id */
+      siteId: 'www.qct.io',
+      /* A CSS selector that points to your search  box */
+      searchBox: {selector: '#search-input'}
+   };
+</script>
+<script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js" type="7e3f05c73affed813b8c4773-text/javascript"></script>
+<script type="7e3f05c73affed813b8c4773-text/javascript"> _linkedin_partner_id = "365731"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="7e3f05c73affed813b8c4773-text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=365731&fmt=gif" /> </noscript>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7e3f05c73affed813b8c4773-|49" defer=""></script></body>
+</html>
