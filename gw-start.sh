@@ -5,6 +5,7 @@ DOCKER_LOG_OPT="--log-driver json-file --log-opt max-size=10m --log-opt max-file
 
 docker rm -f c10k-gw
 docker run --network host --name c10k-gw -d \
+  --volumes-from c10k-be \
   -v $PWD/c10k-gw/html:/html \
   -v $PWD/c10k-gw/nginx.conf:/etc/nginx/nginx.conf \
   -v $PWD/c10k-gw/http.d:/etc/nginx/http.d \
